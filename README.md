@@ -154,3 +154,6 @@ apple:unc5XAy6mgT5c
 pineapple:xxajRi3lm1PdQ
 ```
 
+htpasswd creation tool
+https://tech-unlimited.com/makehtpasswd.html
+
