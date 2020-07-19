@@ -121,3 +121,36 @@ If you have any questions, feel free to:
 
 ## Special thanks
 ![JetBrains logo](https://github.com/JetBrains/logos/blob/master/web/jetbrains/jetbrains.svg)
+
+
+---
+### sample setting
+conf.json sample
+```
+{
+    "port": 8080,
+    "title": "TEST WEB SITE",
+    "access": {
+        "allowed_users": [ "pen", "apple", "jack", "joe", "jihn" ],
+        "admin_users": [ "pineapple", "adam" ],
+        "groups": {
+            "dev": [ "jack", "joe", "jihn" ],
+            "support": [ "apple" ],
+            "all": [ "@admin_users", "@dev", "@support", "God" ]
+        }
+    },
+    "auth": {
+        "type": "htpasswd",
+        "htpasswd_path": "conf/.htpasswd"
+    }
+}
+```
+
+.htpasswd sample
+```
+# joe password
+pen:ekSft36rsTqFw
+apple:unc5XAy6mgT5c
+pineapple:xxajRi3lm1PdQ
+```
+
